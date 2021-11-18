@@ -8,6 +8,7 @@ import {
   ViewStyle,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import Animated from 'react-native-reanimated';
 
 type Props = ScrollViewProps & {
   children: React.ReactNode;
@@ -48,7 +49,7 @@ export default function ScreenWrapper({
           {children}
         </ScrollView>
       ) : (
-        <View style={[containerStyle, style]}>{children}</View>
+        <Animated.View style={[containerStyle, style]}>{children}</Animated.View>
       )}
     </>
   );
