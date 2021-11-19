@@ -12,6 +12,8 @@ target 'JitsiApp' do
     :hermes_enabled => false
   )
 
+  # pod 'RNFS', :path => '../node_modules/react-native-fs'
+
   target 'JitsiAppTests' do
     inherit! :complete
     # Pods for testing
